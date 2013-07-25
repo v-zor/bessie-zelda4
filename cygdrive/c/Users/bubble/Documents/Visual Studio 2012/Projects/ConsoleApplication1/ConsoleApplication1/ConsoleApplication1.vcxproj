@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8FFED25-0A3B-4F90-B13A-E08B96AD9210}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bessie\Draw.h" />
+    <ClInclude Include="bessie\Draw2.h" />
+    <ClInclude Include="bessie\Draw3.h" />
+    <ClInclude Include="bessie\Draw4.h" />
+    <ClInclude Include="bessie\RayMantaEngine.h" />
+    <ClInclude Include="bessie\RayMantaImage.h" />
+    <ClInclude Include="bessie\RayMantaImageBase.h" />
+    <ClInclude Include="bessie\RayMantaMatrix3.h" />
+    <ClInclude Include="bessie\RayMantaModel.h" />
+    <ClInclude Include="bessie\RayMantaPoint.h" />
+    <ClInclude Include="bessie\RayMantaPolygon.h" />
+    <ClInclude Include="bessie\RayMantaSphereModel.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy3d.h" />
+    <ClInclude Include="EnemyDemon.h" />
+    <ClInclude Include="EnemyDemon2.h" />
+    <ClInclude Include="EnemyKnight.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Entity3d.h" />
+    <ClInclude Include="Exit.h" />
+    <ClInclude Include="gameengine.h" />
+    <ClInclude Include="Img.h" />
+    <ClInclude Include="ImgSys.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Player3d.h" />
+    <ClInclude Include="Skeleton1.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tile.h" />
+    <ClInclude Include="tile3d.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bessie\Draw.cpp" />
+    <ClCompile Include="bessie\Draw2.cpp" />
+    <ClCompile Include="bessie\Draw3.cpp" />
+    <ClCompile Include="bessie\Draw4.cpp" />
+    <ClCompile Include="bessie\RayMantaEngine.cpp" />
+    <ClCompile Include="bessie\RayMantaImage.cpp" />
+    <ClCompile Include="bessie\RayMantaImageBase.cpp" />
+    <ClCompile Include="bessie\RayMantaMatrix3.cpp" />
+    <ClCompile Include="bessie\RayMantaModel.cpp" />
+    <ClCompile Include="bessie\RayMantaPoint.cpp" />
+    <ClCompile Include="bessie\RayMantaPolygon.cpp" />
+    <ClCompile Include="bessie\RayMantaSphereModel.cpp" />
+    <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enemy3d.cpp" />
+    <ClCompile Include="EnemyDemon.cpp" />
+    <ClCompile Include="EnemyDemon2.cpp" />
+    <ClCompile Include="EnemyKnight.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Entity3d.cpp" />
+    <ClCompile Include="Exit.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="Img.cpp" />
+    <ClCompile Include="ImgSys.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Player3d.cpp" />
+    <ClCompile Include="Skeleton1.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tile.cpp" />
+    <ClCompile Include="tile3d.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDL.lib" />
+    <Library Include="SDLmain.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Windows\SDL.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
